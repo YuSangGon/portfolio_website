@@ -11,16 +11,18 @@ const links = {
 const experience = [
   { company: "Life4Cuts — UK & Europe HQ", role: "Operations Team · Full-time", location: "London, United Kingdom", period: "Jul 2026 — Present", relevant: true, description: "Supporting reliable operations across UK and European locations while managing Shopify workflows and building internal analytics and automation tools." },
   { company: "Wissensbaum", role: "Full-Stack Web Developer", location: "Seoul, South Korea", period: "Feb 2024 — Apr 2025", relevant: true },
-  { company: "Seoul Plaza", role: "Shop Assistant", location: "London, United Kingdom", period: "Aug 2025 — Present" },
+  { company: "Seoul Plaza", role: "Shop Assistant", location: "London, United Kingdom", period: "Aug 2025 — Jul 2026" },
   { company: "Private client", role: "Chauffeur", location: "Suwon, South Korea", period: "Mar 2023 — Oct 2023" },
   { company: "Sulbing", role: "Kitchen Team Member", location: "Pohang, South Korea", period: "Jun 2020 — Dec 2022" },
 ];
 
 const capabilities = [
-  { title: "Product engineering", items: "Java, Spring Boot, Node.js, TypeScript, REST APIs, authentication" },
-  { title: "Frontend", items: "React, Next.js, responsive UI, accessibility, conversion-focused UX" },
-  { title: "Data & infrastructure", items: "PostgreSQL, MySQL, Prisma, Docker, Linux, AWS, Railway, Cloudflare R2" },
-  { title: "Applied AI", items: "OpenAI structured outputs, browser automation, evidence-grounded analysis" },
+  { type: "Technical", title: "Backend & APIs", items: "Java, Spring Boot, Node.js, TypeScript, REST APIs, authentication, background jobs" },
+  { type: "Technical", title: "Frontend & product", items: "React, Next.js, Vite, responsive UI, accessibility, conversion-focused UX" },
+  { type: "Technical", title: "Data & cloud", items: "PostgreSQL, MySQL, Prisma, Docker, Linux, AWS, Railway, Cloudflare R2" },
+  { type: "Technical", title: "AI & automation", items: "OpenAI APIs, structured outputs, Playwright, browser automation, workflow design" },
+  { type: "Professional", title: "Operations & delivery", items: "Process improvement, workflow automation, data analysis, prioritisation, ownership" },
+  { type: "Professional", title: "People & collaboration", items: "Clear communication, cross-functional teamwork, customer empathy, adaptability, problem solving" },
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
@@ -75,7 +77,7 @@ function App() {
 
         <section id="skills" className="section skills-section">
           <div className="section-heading"><div><p className="eyebrow">Capabilities</p><h2>Tools chosen around the problem.</h2></div><p>I’m strongest when I can connect product needs, backend design, and a clear user experience.</p></div>
-          <div className="capability-grid">{capabilities.map((group, index) => <article key={group.title}><span>0{index + 1}</span><h3>{group.title}</h3><p>{group.items}</p></article>)}</div>
+          <div className="capability-grid">{capabilities.map((group, index) => <article key={group.title}><div className="capability-meta"><span>0{index + 1}</span><span className={`skill-type skill-type-${group.type.toLowerCase()}`}>{group.type}</span></div><h3>{group.title}</h3><p>{group.items}</p></article>)}</div>
         </section>
 
         <section className="section education-section"><p className="eyebrow">Education</p><div><h2>BSc Computer Science</h2><p>Handong Global University · South Korea</p><span>2017 — 2023</span></div></section>

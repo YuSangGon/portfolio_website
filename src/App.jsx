@@ -3,7 +3,7 @@ import "./App.css";
 const links = {
   github: "https://github.com/yusanggon",
   linkedin: "https://www.linkedin.com/in/sanggon-yu-1811ba293",
-  cv: "https://drive.google.com/file/d/1fMMyefiw5w80XXGdibNIZQ4jZn4uzM2b/view?usp=sharing",
+  cv: "https://drive.google.com/file/d/1HQ8yvlhUcqMM6cgy-RzeRYw9txFDf_YU/view?usp=sharing",
   signalAudit: "https://app.signalaudit.org",
   email: "mailto:yusang5159@email.com",
 };

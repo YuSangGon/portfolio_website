@@ -10,10 +10,10 @@ const links = {
 
 const experience = [
   { company: "Life4Cuts — UK & Europe HQ", role: "Operations Team · Full-time", location: "London, United Kingdom", period: "Jul 2026 — Present", relevant: true, description: "Supporting reliable operations across UK and European locations while managing Shopify workflows and building internal analytics and automation tools." },
-  { company: "Wissensbaum", role: "Full-Stack Web Developer", location: "Seoul, South Korea", period: "Feb 2024 — Apr 2025", relevant: true },
-  { company: "Seoul Plaza", role: "Shop Assistant", location: "London, United Kingdom", period: "Aug 2025 — Jul 2026" },
-  { company: "Private client", role: "Chauffeur", location: "Suwon, South Korea", period: "Mar 2023 — Oct 2023" },
-  { company: "Sulbing", role: "Kitchen Team Member", location: "Pohang, South Korea", period: "Jun 2020 — Dec 2022" },
+  { company: "Wissensbaum", role: "Full-Stack Web Developer", location: "Seoul, South Korea", period: "Feb 2024 — Apr 2025", relevant: true, description: "Built a remote examination monitoring and proctoring system, and developed and maintained public-sector websites with a focus on reliability, usability, and long-term support." },
+  { company: "Seoul Plaza", role: "Shop Assistant", location: "London, United Kingdom", period: "Aug 2025 — Jul 2026", description: "Supported daily retail operations in a busy London store, assisting customers, managing stock, and resolving issues with speed and care." },
+  { company: "Private client", role: "Chauffeur", location: "Suwon, South Korea", period: "Mar 2023 — Oct 2023", description: "Delivered dependable, time-sensitive service while coordinating changing schedules and maintaining discretion and clear communication." },
+  { company: "Sulbing", role: "Kitchen Team Member", location: "Pohang, South Korea", period: "Jun 2020 — Dec 2022", description: "Worked effectively in a fast-paced team, maintaining quality and consistency during high-volume service." },
 ];
 
 const capabilities = [
@@ -80,7 +80,14 @@ function App() {
           <div className="capability-grid">{capabilities.map((group, index) => <article key={group.title}><div className="capability-meta"><span>0{index + 1}</span><span className={`skill-type skill-type-${group.type.toLowerCase()}`}>{group.type}</span></div><h3>{group.title}</h3><p>{group.items}</p></article>)}</div>
         </section>
 
-        <section className="section education-section"><p className="eyebrow">Education</p><div><h2>BSc Computer Science</h2><p>Handong Global University · South Korea</p><span>2017 — 2023</span></div></section>
+        <section className="section education-section">
+          <p className="eyebrow">Education</p>
+          <div className="education-content">
+            <div className="education-heading"><div><h2>BSc Computer Science</h2><p>Handong Global University · South Korea</p></div><span>2017 — 2023</span></div>
+            <p className="education-description">Built a strong foundation in software engineering, algorithms, databases, and computer systems through team-based coursework and practical development projects. The programme shaped how I break down complex problems, learn unfamiliar technologies, and turn ideas into maintainable software.</p>
+            <div className="education-topics"><span>Software Engineering</span><span>Algorithms</span><span>Databases</span><span>Computer Systems</span><span>Team Projects</span></div>
+          </div>
+        </section>
 
         <section id="contact" className="contact-section"><p className="eyebrow">Let’s build something useful</p><h2>Looking for a full-stack developer who can own the details?</h2><p>I’m available for software engineering opportunities in London and open to conversations with teams building meaningful products.</p><div className="contact-actions"><a className="button light" href={links.email}>Email me <Arrow /></a><a href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a><a href={links.github} target="_blank" rel="noreferrer">GitHub <Arrow /></a></div></section>
       </main>

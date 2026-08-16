@@ -5,6 +5,7 @@ const links = {
   linkedin: "https://www.linkedin.com/in/sanggon-yu-1811ba293",
   cv: "https://drive.google.com/file/d/1HQ8yvlhUcqMM6cgy-RzeRYw9txFDf_YU/view?usp=sharing",
   signalAudit: "https://app.signalaudit.org",
+  careerSimulator: "https://ai-career-simulator.vercel.app/",
   email: "mailto:yusang5159@email.com",
 };
 
@@ -249,6 +250,107 @@ function App() {
                 rel="noreferrer"
               >
                 Open Signal Audit <Arrow />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="section project-section career-project-section">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Selected side project · 02</p>
+              <h2>AI Career Simulator</h2>
+            </div>
+            <a
+              className="text-link"
+              href={links.careerSimulator}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit live product <Arrow />
+            </a>
+          </div>
+          <div className="project-hero career-project-hero">
+            <div
+              className="product-preview career-preview"
+              aria-label="Stylised preview of AI Career Simulator"
+            >
+              <div className="preview-bar">
+                <span />
+                <span />
+                <span />
+                <small>Career readiness dashboard</small>
+              </div>
+              <div className="career-preview-body">
+                <div className="readiness-heading">
+                  <div>
+                    <p>Target role</p>
+                    <h3>Backend Engineer</h3>
+                  </div>
+                  <strong>74<span>/100</span></strong>
+                </div>
+                <div className="readiness-meter"><span /></div>
+                <div className="career-metrics">
+                  <div><small>Market fit</small><strong>Strong</strong></div>
+                  <div><small>Priority gap</small><strong>Cloud</strong></div>
+                  <div><small>Roadmap</small><strong>6 months</strong></div>
+                </div>
+                <div className="career-next-step">
+                  <span>Next evidence milestone</span>
+                  <p>Ship a production API with cloud monitoring</p>
+                </div>
+              </div>
+            </div>
+            <div className="project-story">
+              <p className="project-lead">
+                An evidence-backed career planning product that compares a
+                candidate’s experience with target roles and turns market data
+                into clear priorities, salary scenarios, and an actionable
+                roadmap.
+              </p>
+              <div className="impact-list">
+                <div>
+                  <span>01</span>
+                  <p>
+                    <strong>Evidence-led assessment</strong>Structures CV data,
+                    separates technical fit from evidence quality, and produces
+                    reproducible readiness results.
+                  </p>
+                </div>
+                <div>
+                  <span>02</span>
+                  <p>
+                    <strong>Real market context</strong>Deduplicates job data,
+                    identifies recurring skill demand, and uses robust salary
+                    percentiles instead of isolated listings.
+                  </p>
+                </div>
+                <div>
+                  <span>03</span>
+                  <p>
+                    <strong>Decision support</strong>Connects skill gaps to a
+                    six-month roadmap, application analytics, and an interactive
+                    what-if career sandbox.
+                  </p>
+                </div>
+              </div>
+              <div className="tech-list">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>PostgreSQL</span>
+                <span>Prisma</span>
+                <span>OpenAI</span>
+                <span>Adzuna API</span>
+                <span>Playwright</span>
+                <span>Docker</span>
+              </div>
+              <a
+                className="button primary"
+                href={links.careerSimulator}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Explore the project <Arrow />
               </a>
             </div>
           </div>

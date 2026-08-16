@@ -16,12 +16,35 @@
 .capability-grid .skill-type-professional{background:var(--blue);border-color:transparent;color:#4f5872}
 .capability-grid h3{margin-top:50px}
 
+.career-project-section{background:var(--paper);border-top:1px solid var(--line)}
+.career-project-hero{grid-template-columns:minmax(360px,.88fr) minmax(0,1.12fr)}
+.career-preview{background:#e6ecff;color:var(--ink);border-color:rgba(21,23,19,.1);box-shadow:0 35px 80px rgba(52,67,118,.15)}
+.career-preview .preview-bar{border-bottom-color:rgba(21,23,19,.1)}
+.career-preview .preview-bar>span{background:#9aa5c9}
+.career-preview .preview-bar small{color:#68708d}
+.career-preview-body{min-height:430px;box-sizing:border-box;padding:48px;background:radial-gradient(circle at 100% 0,rgba(255,255,255,.9),transparent 42%)}
+.readiness-heading{display:flex;align-items:start;justify-content:space-between;gap:24px}
+.readiness-heading p{margin:0;color:#68708d;font-size:10px;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+.readiness-heading h3{margin:10px 0 0;font-size:28px;letter-spacing:-.04em}
+.readiness-heading>strong{font-size:52px;line-height:1;letter-spacing:-.06em}
+.readiness-heading>strong span{color:#68708d;font-size:13px;letter-spacing:0}
+.readiness-meter{height:9px;margin:32px 0 38px;overflow:hidden;border-radius:99px;background:rgba(21,23,19,.1)}
+.readiness-meter span{display:block;width:74%;height:100%;border-radius:inherit;background:#596ee8}
+.career-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.career-metrics div{padding:18px;border:1px solid rgba(21,23,19,.1);border-radius:14px;background:rgba(255,255,255,.55)}
+.career-metrics small,.career-next-step span{display:block;color:#68708d;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.career-metrics strong{display:block;margin-top:9px;font-size:15px}
+.career-next-step{margin-top:28px;padding:20px;border-radius:14px;background:var(--ink);color:#fff}
+.career-next-step span{color:#aab4d5}
+.career-next-step p{margin:9px 0 0;font-size:14px}
+
 @media(max-width:850px){
   .capability-grid{grid-template-columns:1fr 1fr}
   .capability-grid article{border-top:1px solid var(--line)}
   .capability-grid article:nth-child(-n+2){border-top:0}
   .capability-grid article:nth-child(odd){border-left:0}
   .capability-grid article:nth-child(even){border-left:1px solid var(--line)}
+  .career-project-hero{grid-template-columns:1fr}
 }
 
 @media(max-width:520px){
@@ -30,4 +53,6 @@
   .capability-grid{grid-template-columns:1fr}
   .capability-grid article{border-left:0!important;border-top:1px solid var(--line)!important}
   .capability-grid article:first-child{border-top:0!important}
+  .career-preview-body{min-height:auto;padding:30px 24px}
+  .career-metrics{grid-template-columns:1fr}
 }

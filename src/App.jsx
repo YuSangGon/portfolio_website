@@ -350,7 +350,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Explore the project <Arrow />
+                Open AI Career Simulator <Arrow />
               </a>
             </div>
           </div>

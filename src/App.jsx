@@ -6,6 +6,7 @@ const links = {
   cv: "https://drive.google.com/file/d/1HQ8yvlhUcqMM6cgy-RzeRYw9txFDf_YU/view?usp=sharing",
   signalAudit: "https://app.signalaudit.org",
   careerSimulator: "https://ai-career-simulator.vercel.app/",
+  tripPilot: "https://github.com/YuSangGon/trip-pilot.git",
   email: "mailto:yusang5159@email.com",
 };
 
@@ -351,6 +352,109 @@ function App() {
                 rel="noreferrer"
               >
                 Open AI Career Simulator <Arrow />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="section project-section trip-project-section">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Selected side project · 03</p>
+              <h2>TripPilot</h2>
+            </div>
+            <a
+              className="text-link"
+              href={links.tripPilot}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View source code <Arrow />
+            </a>
+          </div>
+          <div className="project-hero trip-project-hero">
+            <div
+              className="product-preview trip-preview"
+              aria-label="Stylised preview of TripPilot"
+            >
+              <div className="preview-bar">
+                <span />
+                <span />
+                <span />
+                <small>Live itinerary · London</small>
+              </div>
+              <div className="trip-preview-body">
+                <div className="trip-status">
+                  <span>Day 2 of 4</span>
+                  <strong>12°C · Light rain</strong>
+                </div>
+                <h3>Your day,<br /><em>adapted live.</em></h3>
+                <div className="trip-route">
+                  <article>
+                    <span>09:30</span>
+                    <div><strong>British Museum</strong><small>Locked booking</small></div>
+                  </article>
+                  <article>
+                    <span>12:15</span>
+                    <div><strong>Lunch in Soho</strong><small>18 min walk</small></div>
+                  </article>
+                  <article className="trip-change">
+                    <span>14:00</span>
+                    <div><strong>Weather-safe alternative</strong><small>Adjusted by TripPilot</small></div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div className="project-story">
+              <p className="project-lead">
+                A native travel copilot that brings live location, weather,
+                routing, reservations, and companion sharing into one itinerary
+                that adapts while the trip is happening.
+              </p>
+              <div className="impact-list">
+                <div>
+                  <span>01</span>
+                  <p>
+                    <strong>Live trip context</strong>Combines GPS, reverse
+                    geocoding, local weather, interactive maps, and walking,
+                    transit, or driving directions.
+                  </p>
+                </div>
+                <div>
+                  <span>02</span>
+                  <p>
+                    <strong>Safe AI replanning</strong>Generates weather- and
+                    delay-aware alternatives while deterministic validation
+                    protects bookings, timing, and schedule constraints.
+                  </p>
+                </div>
+                <div>
+                  <span>03</span>
+                  <p>
+                    <strong>Connected travel</strong>Supports reservation
+                    confirmations, approved companion locations, notifications,
+                    geofences, and restorable schedule versions.
+                  </p>
+                </div>
+              </div>
+              <div className="tech-list">
+                <span>React Native</span>
+                <span>Expo</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>PostgreSQL</span>
+                <span>Prisma</span>
+                <span>OpenAI</span>
+                <span>OpenStreetMap</span>
+                <span>Docker</span>
+              </div>
+              <a
+                className="button primary"
+                href={links.tripPilot}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open TripPilot <Arrow />
               </a>
             </div>
           </div>

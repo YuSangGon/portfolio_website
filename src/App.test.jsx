@@ -8,4 +8,6 @@ test("presents Sanggon's work and featured product", () => {
   expect(screen.getByRole("link", { name: /Open Signal Audit/i })).toHaveAttribute("href", "https://app.signalaudit.org");
   expect(screen.getByRole("heading", { name: "AI Career Simulator" })).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /Open AI Career Simulator/i })).toHaveAttribute("href", "https://ai-career-simulator.vercel.app/");
+  expect(screen.getByRole("heading", { name: "TripPilot" })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /Open TripPilot/i })).toHaveAttribute("href", "https://github.com/YuSangGon/trip-pilot.git");
 });
